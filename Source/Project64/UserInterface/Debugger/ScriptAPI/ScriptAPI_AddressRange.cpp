@@ -23,8 +23,8 @@ void ScriptAPI::Define_AddressRange(duk_context* ctx)
         { "ADDR_ANY_KSEG0",        0x80000000, 0x9FFFFFFF },
         { "ADDR_ANY_KSEG1",        0xA0000000, 0xBFFFFFFF },
         { "ADDR_ANY_KSEG2",        0xC0000000, 0xFFFFFFFF },
-        { "ADDR_ANY_RDRAM",        0x80000000, 0x807FFFFF },
-        { "ADDR_ANY_RDRAM_UNC",    0xA0000000, 0xA07FFFFF },
+        { "ADDR_ANY_RDRAM",        0x80000000, 0x80BFFFFF },
+        { "ADDR_ANY_RDRAM_UNC",    0xA0000000, 0xA0BFFFFF },
         { "ADDR_ANY_CART_ROM",     0x90000000, 0x95FFFFFF },
         { "ADDR_ANY_CART_ROM_UNC", 0xB0000000, 0xB5FFFFFF },
         { nullptr, 0, 0 }
