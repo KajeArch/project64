@@ -45,6 +45,7 @@ CGameGeneralPage::CGameGeneralPage(HWND hParent, const RECT & rcDispay)
         ComboBox->SetTextField(GetDlgItem(IDC_MEMORY_SIZE_TEXT));
         ComboBox->AddItem(wGS(RDRAM_4MB).c_str(), 0x400000);
         ComboBox->AddItem(wGS(RDRAM_8MB).c_str(), 0x800000);
+        ComboBox->AddItem(wGS(RDRAM_16MB).c_str(), 0xC00000);
     }
 
     ComboBox = AddModComboBox(GetDlgItem(IDC_SAVE_TYPE), Game_SaveChip);
