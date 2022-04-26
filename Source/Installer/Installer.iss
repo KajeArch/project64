@@ -23,7 +23,7 @@ SetupIconFile={#BaseDir}\Source\Project64\UserInterface\Icons\pj64.ico
 Filename: "{app}\Project64MM.exe"; Description: "{cm:LaunchProgram,{#StringChange('Project64MM', '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Files]
-Source: "{#BaseDir}\Bin\{#Configuration}\Project64.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#BaseDir}\Bin\{#Configuration}\Project64MM.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BaseDir}\Config\Video.rdb"; DestDir: "{app}\Config"
 Source: "{#BaseDir}\Config\Audio.rdb"; DestDir: "{app}\Config"
 Source: "{#BaseDir}\Config\Cheats\*.cht"; DestDir: "{app}\Config\Cheats"
@@ -53,10 +53,10 @@ Name: "{app}\Textures"; Permissions: everyone-full
 Name: "{app}\Plugin\GFX\GLideN64"; Permissions: everyone-full
 
 [Icons]
-Name: "{commondesktop}\Project64MM"; Filename: "{app}\Project64.exe"; Tasks: desktopicon
-Name: "{commonprograms}\Project64MM 2.0\Project64"; Filename: "{app}\Project64.exe"
+Name: "{commondesktop}\Project64MM"; Filename: "{app}\Project64MM.exe"; Tasks: desktopicon
+Name: "{commonprograms}\Project64MM 2.0\Project64MM"; Filename: "{app}\Project64MM.exe"
 Name: "{commonprograms}\Project64MM 2.0\Uninstall Project64MM 2.0"; Filename: "{uninstallexe}"; Parameters: "/LOG"; Flags: createonlyiffileexists
-Name: "{commonprograms}\Project64MM 2.0\Support"; Filename: "http://forum.pj64-emu.com"
+Name: "{commonprograms}\Project64MM 2.0\Support"; Filename: "http://sm64-hacks.square7.ch"
 
 [Tasks]
 Name: desktopicon; Description: "Create a &desktop icon"
