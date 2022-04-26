@@ -9,7 +9,7 @@
 #include "DMALog.h"
 
 CDebugMemoryView::jump_item_t CDebugMemoryView::JumpItems[] = {
-    { 0x80000000, 0x00000000, 0x0800000, "RDRAM" },
+    { 0x80000000, 0x00000000, 0x1000000, "RDRAM" },
     { 0xA3F00000, 0x03F00000, 0x0000028, "RDRAM registers" },
     { 0xA4000000, 0x04000000, 0x0001000, "SP DMEM" },
     { 0xA4001000, 0x04001000, 0x0001000, "SP IMEM" },
