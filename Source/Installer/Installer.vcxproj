@@ -32,8 +32,8 @@
   <ItemGroup>
     <CustomBuild Include="Installer.iss">
       <Command>"$(Root)bin\Inno Setup\ISCC.exe" /dConfiguration="$(Configuration)" "%(Filename).iss"</Command>
-      <AdditionalInputs>$(OutDir)Project64.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs>$(OutDir)Setup Project64 2.2.exe;%(Outputs)</Outputs>
+      <AdditionalInputs>$(OutDir)Project64MM.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>$(OutDir)Setup Project64MM 2.0.exe;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
