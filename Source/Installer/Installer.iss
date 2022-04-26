@@ -1,15 +1,15 @@
 #define BaseDir ExtractFilePath(ExtractFilePath(ExtractFilePath(SourcePath)))
-#define AppVersion GetFileVersion(BaseDir + "\Bin\" + Configuration + "\Project64.exe")
+#define AppVersion GetFileVersion(BaseDir + "\Bin\" + Configuration + "\Project64MM.exe")
 
 [Setup]
 AppId={{BEB5FB69-4080-466F-96C4-F15DF271718B}
-AppName=Project64
+AppName=Project64MM
 AppVersion={#AppVersion}
-DefaultDirName={pf32}\Project64 Dev 3.0
+DefaultDirName={pf32}\Project64MM 2.0
 VersionInfoVersion={#AppVersion}
 OutputDir={#BaseDir}\Bin\{#Configuration}
-OutputBaseFilename=Setup Project64 Dev 3.0
-VersionInfoDescription=Installation Setup of Project64 Dev 3.0
+OutputBaseFilename=Setup Project64 MM 2.0
+VersionInfoDescription=Installation Setup of Project64MM 2.0
 Compression=lzma2/ultra64
 WizardImageFile=Installer-Sidebar.bmp
 WizardSmallImageFile=Pj64LogoSmallImage.bmp
@@ -20,7 +20,7 @@ UninstallDisplayIcon={uninstallexe}
 SetupIconFile={#BaseDir}\Source\Project64\UserInterface\Icons\pj64.ico
 
 [Run]
-Filename: "{app}\Project64.exe"; Description: "{cm:LaunchProgram,{#StringChange('Project64', '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\Project64MM.exe"; Description: "{cm:LaunchProgram,{#StringChange('Project64MM', '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Files]
 Source: "{#BaseDir}\Bin\{#Configuration}\Project64.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -53,10 +53,10 @@ Name: "{app}\Textures"; Permissions: everyone-full
 Name: "{app}\Plugin\GFX\GLideN64"; Permissions: everyone-full
 
 [Icons]
-Name: "{commondesktop}\Project64"; Filename: "{app}\Project64.exe"; Tasks: desktopicon
-Name: "{commonprograms}\Project64 2.3\Project64"; Filename: "{app}\Project64.exe"
-Name: "{commonprograms}\Project64 2.3\Uninstall Project64 2.3"; Filename: "{uninstallexe}"; Parameters: "/LOG"; Flags: createonlyiffileexists
-Name: "{commonprograms}\Project64 2.3\Support"; Filename: "http://forum.pj64-emu.com"
+Name: "{commondesktop}\Project64MM"; Filename: "{app}\Project64.exe"; Tasks: desktopicon
+Name: "{commonprograms}\Project64MM 2.0\Project64"; Filename: "{app}\Project64.exe"
+Name: "{commonprograms}\Project64MM 2.0\Uninstall Project64MM 2.0"; Filename: "{uninstallexe}"; Parameters: "/LOG"; Flags: createonlyiffileexists
+Name: "{commonprograms}\Project64MM 2.0\Support"; Filename: "http://forum.pj64-emu.com"
 
 [Tasks]
 Name: desktopicon; Description: "Create a &desktop icon"
