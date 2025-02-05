@@ -353,6 +353,7 @@ enum LanguageStringID
     RDRAM_8MB = 581,
     RDRAM_12MB = 582,
     RDRAM_16MB = 583,
+    RDRAM_20MB = 584,
 
     // Advanced block linking
     ABL_ON = 600,
